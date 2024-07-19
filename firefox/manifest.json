@@ -1,7 +1,7 @@
 {
-  "name": "Aria2-AriaNG下载管理组件",
-  "description": "基于Aria2并使用AriaNG界面管理的浏览器下载组件",
-  "version": "0.5.1",
+  "name": "Aria2 Integration",
+  "description": "Aria2 Downloader integrated with AriaNG",
+  "version": "0.6.0",
   "default_locale": "en",
   "manifest_version": 2,
   "permissions": [
@@ -42,14 +42,14 @@
      "128": "data/icons/128.png",
      "256": "data/icons/256.png"
   },
-  "homepage_url": "https://github.com/muilib/aria2-ariang/",
+  "homepage_url": "https://github.com/tiltshiftfocus/aria2-ariang/",
   "options_ui": {
     "page": "data/options/menu.html",
 	"open_in_tab": true
   },
   "applications": {
     "gecko": {
-      "id": "{A666F7B3-A03E-42AF-97AC-AFAE78D08D15}",
+      "id": "{F520F27D-2890-4419-940B-0BAA3F118B4B}",
 	  "strict_min_version": "60.0"
     }
   }

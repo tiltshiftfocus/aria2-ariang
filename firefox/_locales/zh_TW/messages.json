@@ -1,6 +1,6 @@
 {
 	"extensionName": {
-		"message": "Aria2-AriaNG 下載器",
+		"message": "Aria2 下載",
 		"description": "擴充套件的名稱"
 	},
 
@@ -426,7 +426,7 @@
 	},
 	
 	"OP_title": {
-		"message": "Aria2-AriaNG 下載器 選項",
+		"message": "Aria2 下載器設置",
 		"description": ""
 	},
 	
@@ -485,6 +485,11 @@
 		"description": "右鍵選單"
 	},
 	
+	"about_author": {
+		"message": "作者",
+		"description": ""
+	},
+	
 	"about_M1": {
 		"message": "什麼是 Aria2？",
 		"description": ""
@@ -518,5 +523,11 @@
 	"about_L5": {
 		"message": "幫忙翻譯",
 		"description": ""
+	},
+
+	"about_sourcecode": {
+		"message": "代碼項目",
+		"description": ""
 	}
+	
 }

@@ -1,74 +1,88 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<meta charset="utf-8">
 	<title>Options Page</title>
 </head>
+
 <body>
 	<style type="text/css">
-	       body {
-	         font-family: "sans-serif;
-	         font-size: 16px;
-	         background: #f9f9fa;
-	       }
-	       p {
-	         margin: 3px;
-	       }
-	       table {
-	         width: 100%;
-			 padding-right: 20px;
-	       }
-	       .note {
-	         font-size: 80%;
-			 color: rgb(127, 127, 127);
-	       }
-	       .highlight {
-	         font-size: 80%;
-			 border: solid 2px #D22222;
-			 padding: 7px;
-			 margin-bottom: 10px;
-	       }
-	       #save {
-	         position: relative;
-	         width: 80px;
-	         height: 30px;
-	         margin-top: 30px;
-	         font-size: 18px;
-	         text-align: center;
-	         background-image: none;
-	         background-color: rgb(44, 173, 255);
-	         border-style: none;
-	         border-radius: 2px;
-	         text-shadow: rgb(0, 64, 91) 0px 0px 0.5px;
-	         color: rgb(255, 255, 255);
-	      }
-		  #test {
-			position: relative;
-	         width: 80px;
-	         height: 30px;
-	         margin-top: 30px;
-	         font-size: 18px;
-	         text-align: center;
-	         background-image: none;
-	         background-color: rgb(44, 173, 255);
-	         border-style: none;
-	         border-radius: 2px;
-	         text-shadow: rgb(0, 64, 91) 0px 0px 0.5px;
-	         color: rgb(255, 255, 255);
-	      }
-		  .slider {
-				width: 85%; 
-				opacity: 1;
+		html,
+		body {
+			margin: 0;
+		}
 
-			}
+		body {
+			font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+			font-size: 16px;
+			background: #f9f9fa;
+		}
+
+		p {
+			margin: 3px;
+		}
+
+		table {
+			width: 100%;
+			padding-right: 20px;
+		}
+
+		.note {
+			font-size: 80%;
+			color: rgb(127, 127, 127);
+		}
+
+		.highlight {
+			font-size: 80%;
+			border: solid 2px #D22222;
+			padding: 7px;
+			margin-bottom: 10px;
+		}
+
+		#save {
+			position: relative;
+			width: 80px;
+			height: 30px;
+			margin-top: 30px;
+			font-size: 18px;
+			text-align: center;
+			background-image: none;
+			background-color: rgb(44, 173, 255);
+			border-style: none;
+			border-radius: 2px;
+			text-shadow: rgb(0, 64, 91) 0px 0px 0.5px;
+			color: rgb(255, 255, 255);
+		}
+
+		#test {
+			position: relative;
+			width: 80px;
+			height: 30px;
+			margin-top: 30px;
+			font-size: 18px;
+			text-align: center;
+			background-image: none;
+			background-color: rgb(44, 173, 255);
+			border-style: none;
+			border-radius: 2px;
+			text-shadow: rgb(0, 64, 91) 0px 0px 0.5px;
+			color: rgb(255, 255, 255);
+		}
+
+		.slider {
+			width: 85%;
+			opacity: 1;
+
+		}
 	</style>
 	<div>
 		<p data-message="OP_rpc3">RPC Server 3</p>
 	</div>
 	<div class="highlight">
 		<p data-message="OP_message1">You need to download and start Aria2 by youself, complete at least
-		"Protocol," "Host," "Port" and "Interface" below and then click the "Save"
-		button.</p>
+			"Protocol," "Host," "Port" and "Interface" below and then click the "Save"
+			button.</p>
 	</div>
 	<table>
 		<tr>
@@ -89,8 +103,7 @@
 		</tr>
 		<tr>
 			<td data-message="OP_protocol">Protocol:</td>
-			<td><input id="protocol" style="width: 100%; margin-top: 5px;" type=
-			"text"></td>
+			<td><input id="protocol" style="width: 100%; margin-top: 5px;" type="text"></td>
 		</tr>
 		<tr>
 			<td></td>
@@ -114,8 +127,7 @@
 		</tr>
 		<tr>
 			<td data-message="OP_interface">Interface:</td>
-			<td><input id="interf" style="width: 100%; margin-top: 5px;" type=
-			"text"></td>
+			<td><input id="interf" style="width: 100%; margin-top: 5px;" type="text"></td>
 		</tr>
 		<tr>
 			<td></td>
@@ -123,22 +135,22 @@
 		</tr>
 		<tr>
 			<td data-message="OP_token">Token:</td>
-			<td><input id="token" style="width: 100%; margin-top: 5px;" type=
-			"text"></td>
+			<td><input id="token" style="width: 100%; margin-top: 5px;" type="text"></td>
 		</tr>
 		<tr>
 			<td></td>
 			<td data-message="OPN_token" class="note">Aria2 RPC secret, optional.</td>
 		</tr>
 	</table>
-	<div align="right">
-		<span id="status"></span>
-		<button data-message="OP_test" id="test">Test</button>
-		<button data-message="OP_save" id="save">Save</button>
-	</div>
-<script src="/config.js"></script> 
-<script src="/lib/polygoat.js"></script>
-<script src="/lib/aria.js"></script>
-<script src="rpc3.js"></script>
+
+	<button data-message="OP_test" id="test">Test</button>
+	<button data-message="OP_save" id="save">Save</button>
+	<span id="status"></span>
+
+	<script src="/config.js"></script>
+	<script src="/lib/polygoat.js"></script>
+	<script src="/lib/aria.js"></script>
+	<script src="rpc3.js"></script>
 </body>
+
 </html>

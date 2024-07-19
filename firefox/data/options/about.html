@@ -4,44 +4,60 @@
 	<meta charset="utf-8">
 	<title>Options Page</title>
 	<style type="text/css">
-	       body {
-	         font-family: "sans-serif";
-	         font-size: 16px;
-	         background: #f9f9fa;
-			 width: 1000px;
-	       }
-	       p {
-	         margin: 3px;
-	       }
-		   .tab {
-	         margin-left: 30px;
-	       }
+		html,
+		body {
+			margin: 0;
+		}
+
+		body {
+			font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+			font-size: 16px;
+			background: #f9f9fa;
+			width: 1000px;
+		}
+
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6 {
+			margin-top: 1rem;
+			margin-bottom: 1rem;
+		}
+
+		hr {
+			margin-top: 2rem;
+			margin-bottom: 2rem;
+		}
+
+		p {
+			margin-top: 3px;
+			margin-bottom: 3px;
+		}
 	</style>
 </head>
+
 <body>
 	<div>
-		<p>作者: MUIAPP</p>
+		<h3 data-message="about_author">Author</h3>
+		<p>tiltshiftfocus</p>
+		<small>Forked from: MUIAPP [<a href="https://github.com/muilib/aria2-ariang"
+				target="_blank">https://github.com/muilib/aria2-ariang</a>]</small>
+		<br />
+		<small>Originally from: Ross Wang [<a href="https://github.com/RossWang/Aria2-Integration"
+				target="_blank">https://github.com/RossWang/Aria2-Integration</a>]</small>
 		<br>
-		<div class="tab">
-			<p>插件代码主页</p>
-			<div class="tab">
-				<a href="https://github.com/muilib/aria2-ariang" target="_blank">https://github.com/muilib/aria2-ariang</a>
-			</div>
-			<p>插件启动Aria2文件主页</p>
-			<div class="tab">
-				<a href="https://github.com/muilib/aria2-ariang/tree/main/aria2" target="_blank">https://github.com/muilib/aria2-ariang/tree/main/aria2</a>
-			</div>
-		</div>
-		<br>
+		<h3 data-message="about_sourcecode">Source Code</h3>
+		<a href="https://github.com/tiltshiftfocus/aria2-ariang"
+			target="_blank">https://github.com/tiltshiftfocus/aria2-ariang</a>
+		<br />
 		<hr>
-		<p data-message="about_M1">What is Aria2?</p>
-		<div class="tab">
-			<a href="https://aria2.github.io/" target="_blank">https://aria2.github.io/</a>
-		</div>
-		<p data-message="about_M2">This add-on uses Mayswind's AriaNg.</p>
-		<div class="tab">
-			<a href="https://github.com/mayswind/AriaNg" target="_blank">https://github.com/mayswind/AriaNg</a>
-		</div>
+		<h3 data-message="about_M1">What is Aria2?</h3>
+		<a href="https://aria2.github.io/" target="_blank">https://aria2.github.io/</a>
+		<h3 data-message="about_M2">This add-on uses Mayswind's AriaNg.</h3>
+		<a href="https://github.com/mayswind/AriaNg" target="_blank">https://github.com/mayswind/AriaNg</a>
 	</div>
 </body>
+
 </html>

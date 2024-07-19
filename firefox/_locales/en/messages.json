@@ -1,6 +1,6 @@
 {
 	"extensionName": {
-		"message": "Aria2-AriaNG Download Integration",
+		"message": "Aria2 Integration",
 		"description": "Name of the extension."
 	},
 
@@ -425,7 +425,7 @@
 	},
 	
 	"OP_title": {
-		"message": "Aria2-AriaNG Download Manager Options",
+		"message": "Aria2 Integration Settings",
 		"description": ""
 	},
 	
@@ -484,6 +484,11 @@
 		"description": "Context Menu"
 	},
 	
+	"about_author": {
+		"message": "Author",
+		"description": ""
+	},
+	
 	"about_M1": {
 		"message": "What is Aria2?",
 		"description": ""
@@ -516,6 +521,11 @@
 	
 	"about_L5": {
 		"message": "Help Translate",
+		"description": ""
+	},
+
+	"about_sourcecode": {
+		"message": "Source Code",
 		"description": ""
 	}
 }

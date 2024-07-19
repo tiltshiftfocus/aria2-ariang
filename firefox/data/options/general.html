@@ -8,8 +8,13 @@
 
 <body>
 	<style type="text/css">
+		html,
 		body {
-			font-family: sans-serif;
+			margin: 0;
+		}
+
+		body {
+			font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 			font-size: 16px;
 			background: #f9f9fa;
 		}
@@ -81,7 +86,8 @@
 		</tr>
 		<tr>
 			<td data-message="OPN_shutdown" class="note">Send "--stop-with-process=
-				<PID>" command to aria2c</td>
+				<PID>" command to aria2c
+			</td>
 		</tr>
 		<tr>
 			<td>
@@ -90,7 +96,8 @@
 			</td>
 		</tr>
 		<tr>
-			<td data-message="OPN_winLoc" class="note">The location of Download Panel will be saved (but firefox has bug to create window)</td>
+			<td data-message="OPN_winLoc" class="note">The location of Download Panel will be saved (but firefox has bug
+				to create window)</td>
 		</tr>
 		<tr>
 			<td>
@@ -126,7 +133,8 @@
 			</td>
 		</tr>
 		<tr>
-			<td data-message="OPN_downPanel" class="note">Whether to display a download panel for the download event trigger from the auto observer</td>
+			<td data-message="OPN_downPanel" class="note">Whether to display a download panel for the download event
+				trigger from the auto observer</td>
 		</tr>
 		<tr>
 			<td>
@@ -135,14 +143,17 @@
 			</td>
 		</tr>
 		<tr>
-			<td data-message="OPN_cmDownPanel" class="note">Whether to display a download panel for the download event trigger from the context menu</td>
+			<td data-message="OPN_cmDownPanel" class="note">Whether to display a download panel for the download event
+				trigger from the context menu</td>
 		</tr>
-		<tr><td><br></td></tr>
+		<tr>
+			<td><br></td>
+		</tr>
 	</table>
-	<div align="right">
-		<span id="status"></span>
-		<button data-message="OP_save" id="save">Save</button>
-	</div>
+	
+	<button data-message="OP_save" id="save">Save</button>
+	<span id="status"></span>
+	
 	<script src="/config.js"></script>
 	<script src="general.js"></script>
 </body>
